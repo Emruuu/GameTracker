@@ -33,7 +33,7 @@ Aplikacja mobilna do **śledzenia premier gier** z elementami społecznościowym
 
 | Aplikacja mobilna | Panel administracyjny |
 |-------------------|------------------------|
-| ![mobile](screenshots/mobile-home.png) | ![admin](screenshots/admin-users.png) |
+| ![mobile](screenshots/mobile-home.png)![mobile](screenshots/mobile-home2.png) | ![admin](screenshots/admin-users.png) |
 
 © Łukasz Wojciechowski, 2025
 
