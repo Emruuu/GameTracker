@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".friends_mylist_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFriendsMylist"
+            android:layout_width="match_parent"
+            android:layout_height="645dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etFriendsSearch" />
+
+        <EditText
+            android:id="@+id/etFriendsSearch"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="64dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibFriendsSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@+id/etFriendsSearch"
+            app:layout_constraintStart_toEndOf="@+id/etFriendsSearch"
+            app:layout_constraintTop_toTopOf="@+id/etFriendsSearch" />
+
+        <ImageButton
+            android:id="@+id/ibFriendsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="@+id/ibFriendsSearch"
+            app:layout_constraintStart_toEndOf="@+id/ibFriendsSearch"
+            app:layout_constraintTop_toTopOf="@+id/ibFriendsSearch" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

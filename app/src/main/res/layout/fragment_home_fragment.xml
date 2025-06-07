@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bLast"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/Last"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bSoon"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/Soon"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bLast" />
+
+        <Button
+            android:id="@+id/bNextMonth"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/NextMonth"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bLast"
+            app:layout_constraintStart_toEndOf="@+id/bLast"
+            app:layout_constraintTop_toTopOf="@+id/bLast" />
+
+        <Button
+            android:id="@+id/bThisYear"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/ThisYear"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bSoon"
+            app:layout_constraintStart_toEndOf="@+id/bSoon"
+            app:layout_constraintTop_toTopOf="@+id/bSoon" />
+
+        <Button
+            android:id="@+id/bNextMonth6"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/NextMonth6"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bNextMonth"
+            app:layout_constraintStart_toEndOf="@+id/bNextMonth"
+            app:layout_constraintTop_toTopOf="@+id/bNextMonth" />
+
+        <Button
+            android:id="@+id/bNextYear"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/NextYear"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bThisYear"
+            app:layout_constraintStart_toEndOf="@+id/bThisYear"
+            app:layout_constraintTop_toTopOf="@+id/bThisYear"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/games"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/bNextYear"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="@+id/bSoon"
+            app:layout_constraintTop_toBottomOf="@+id/bThisYear" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHome"
+            android:layout_width="409dp"
+            android:layout_height="492dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSearch" />
+
+        <ImageButton
+            android:id="@+id/ibSzukajMylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@+id/etSearch"
+            app:layout_constraintStart_toEndOf="@+id/etSearch"
+            app:layout_constraintTop_toTopOf="@+id/etSearch"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

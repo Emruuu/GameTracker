@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "801680048357",
+    "project_id": "gametracker-73838",
+    "storage_bucket": "gametracker-73838.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:801680048357:android:a7299da97dddb88457140c",
+        "android_client_info": {
+          "package_name": "com.example.gametracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "801680048357-u405jpao5c1a0bmd409n6hjvvtld0ui5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTkPQrWqdDC7sHb5ZxftNZGEmwMOWppDA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "801680048357-u405jpao5c1a0bmd409n6hjvvtld0ui5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

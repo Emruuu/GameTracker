@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mylist_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/bLastMyList"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/Last"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/bSoonMyList"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/Soon"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bLastMyList" />
+
+        <Button
+            android:id="@+id/bNextMonthMyList"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/NextMonth"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bLastMyList"
+            app:layout_constraintStart_toEndOf="@+id/bLastMyList"
+            app:layout_constraintTop_toTopOf="@+id/bLastMyList" />
+
+        <Button
+            android:id="@+id/bThisYearMyList"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/ThisYear"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bSoonMyList"
+            app:layout_constraintStart_toEndOf="@+id/bSoonMyList"
+            app:layout_constraintTop_toTopOf="@+id/bSoonMyList" />
+
+        <Button
+            android:id="@+id/bNextMonthqMyList"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/NextMonth6"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bNextMonthMyList"
+            app:layout_constraintStart_toEndOf="@+id/bNextMonthMyList"
+            app:layout_constraintTop_toTopOf="@+id/bNextMonthMyList" />
+
+        <Button
+            android:id="@+id/bNextYearMyList"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/NextYear"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/bThisYearMyList"
+            app:layout_constraintStart_toEndOf="@+id/bThisYearMyList"
+            app:layout_constraintTop_toTopOf="@+id/bThisYearMyList"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/etSearchMyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/games"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            app:layout_constraintEnd_toEndOf="@+id/bNextYearMyList"
+            app:layout_constraintHorizontal_bias="0.34"
+            app:layout_constraintStart_toStartOf="@+id/bSoonMyList"
+            app:layout_constraintTop_toBottomOf="@+id/bThisYearMyList" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyList"
+            android:layout_width="409dp"
+            android:layout_height="492dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etSearchMyList" />
+
+        <ImageButton
+            android:id="@+id/ibSzukajMylist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintBottom_toBottomOf="@+id/etSearchMyList"
+            app:layout_constraintStart_toEndOf="@+id/etSearchMyList"
+            app:layout_constraintTop_toTopOf="@+id/etSearchMyList"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

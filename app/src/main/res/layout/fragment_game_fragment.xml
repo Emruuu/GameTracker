@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".game_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/tvTitleGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivFrontGame"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleGame" />
+
+        <TextView
+            android:id="@+id/tvProducerGame"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/ivFrontGame"
+            app:layout_constraintTop_toTopOf="@+id/ivFrontGame" />
+
+        <TextView
+            android:id="@+id/tvPublisherGame"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvProducerGame"
+            app:layout_constraintTop_toBottomOf="@+id/tvProducerGame" />
+
+        <TextView
+            android:id="@+id/tvPlatformGame"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvPublisherGame"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublisherGame" />
+
+        <TextView
+            android:id="@+id/tvDateGame"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvPlatformGame"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlatformGame" />
+
+        <TextView
+            android:id="@+id/tvModeGame"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvDateGame"
+            app:layout_constraintTop_toBottomOf="@+id/tvDateGame" />
+
+        <TextView
+            android:id="@+id/tvGenreGame"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvModeGame"
+            app:layout_constraintTop_toBottomOf="@+id/tvModeGame" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFrontGame">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvDescGame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="32dp"
+                    android:text="TextView"
+                    android:textColor="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+        <ImageButton
+            android:id="@+id/ibTrailerGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_video"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

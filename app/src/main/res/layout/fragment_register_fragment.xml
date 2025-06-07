@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_fragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/register"
+            android:textSize="34sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvEmailReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/mail"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvNickReg"
+            app:layout_constraintTop_toBottomOf="@+id/tvNickReg" />
+
+        <TextView
+            android:id="@+id/tvPasswdReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/paswd"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/tvEmailReg"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailReg" />
+
+        <TextView
+            android:id="@+id/tvConfPasswdReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/confpaswd"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvPasswdReg"
+            app:layout_constraintTop_toBottomOf="@+id/tvPasswdReg" />
+
+        <Button
+            android:id="@+id/bRegisterReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/reg_in"
+            android:backgroundTint="@color/register"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfPasswdReg" />
+
+        <Button
+            android:id="@+id/bLoginReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/login"
+            android:backgroundTint="@color/login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bRegisterReg" />
+
+        <EditText
+            android:id="@+id/etEmailReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginEnd="16dp"
+            android:ems="12"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvEmailReg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvEmailReg"
+            app:layout_constraintTop_toTopOf="@+id/tvEmailReg"
+            app:layout_constraintVertical_bias="0.611"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etPasswdReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="12"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvPasswdReg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvPasswdReg"
+            app:layout_constraintTop_toTopOf="@+id/tvPasswdReg"
+            app:layout_constraintVertical_bias="0.388"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/etConfPasswdReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="12"
+            android:inputType="textPassword"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvConfPasswdReg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvConfPasswdReg"
+            app:layout_constraintTop_toTopOf="@+id/tvConfPasswdReg"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/tvNickReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/nick"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.045"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvReg" />
+
+        <EditText
+            android:id="@+id/etNickReg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ems="12"
+            android:inputType="textPersonName"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/tvNickReg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvNickReg" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

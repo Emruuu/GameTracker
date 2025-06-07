@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/games"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="360dp"
+        android:layout_height="140dp"
+        android:alpha="0.5"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="294dp"
+        android:text="@string/RelaseDate"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ivBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDateSet"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvDate"
+        app:layout_constraintStart_toEndOf="@+id/tvDate"
+        app:layout_constraintTop_toTopOf="@+id/tvDate" />
+
+    <TextView
+        android:id="@+id/tvTitleSet"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvTitle"
+        app:layout_constraintStart_toStartOf="@+id/tvDateSet"
+        app:layout_constraintTop_toTopOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvPlatform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/Platform"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ivBackground"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvTitle" />
+
+    <TextView
+        android:id="@+id/tvGenre"
+        android:layout_width="62dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/Genre"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/ivBackground"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="@+id/ivBackground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvGenreSet"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGenre"
+        app:layout_constraintStart_toStartOf="@+id/tvPlatformSet"
+        app:layout_constraintTop_toTopOf="@+id/tvGenre" />
+
+    <TextView
+        android:id="@+id/tvPlatformSet"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlatform"
+        app:layout_constraintStart_toStartOf="@+id/tvTitleSet"
+        app:layout_constraintTop_toTopOf="@+id/tvPlatform" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Title"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/tvDate"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,70 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="PrivateResource">GameTracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="app_logo">Logo</string>
+    <string name="Profil">Mój Profil</string>
+    <string name="Home">Strona Główna</string>
+    <string name="Last">Ostatnio wydane</string>
+    <string name="NextMonth">Najbliższy miesiąc</string>
+    <string name="NextMonth6">Kolejne 6 miesięcy</string>
+    <string name="Soon">Najbliższe premiery</string>
+    <string name="ThisYear">Premiery 2023</string>
+    <string name="NextYear">Premiery 2024</string>
+    <string name="RelaseDate">Data wydania:</string>
+    <string name="Title">"Tytuł:"</string>
+    <string name="Platform">Platforma:</string>
+    <string name="Genre">Gatunek:</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="activation_req">Wymagana aktywacja</string>
+    <string name="sign_in">Zaloguj</string>
+    <string name="sign_out">Wyloguj</string>
+    <string name="signed_out">Wylogowany</string>
+    <string name="register">Rejestracja</string>
+    <string name="reg_in">Zarejestruj</string>
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="auth_failed">Błędne hasło lub Email</string>
+    <string name="login">Logowanie</string>
+    <string name="mail">Email</string>
+    <string name="paswd">Hasło</string>
+    <string name="confpaswd">Powtórz hasło</string>
+    <string name="log_in">Zaloguj</string>
+    <string name="Activate">Wyślij link ponownie</string>
+    <string name="nick">Nick</string>
+    <string name="desc">Opis:</string>
+    <string name="title">Tytuł:</string>
+    <string name="background">Tło:</string>
+    <string name="front">Okładka:</string>
+    <string name="producer">Producent:</string>
+    <string name="Publisher">Wydawca:</string>
+    <string name="trailerlink">Link ID:</string>
+    <string name="mode">Tryb gry:</string>
+    <string name="genre">Gatunek:</string>
+    <string name="GameAdd">Propozycja premiery</string>
+    <string name="Nick">Nick</string>
+    <string name="Typ">Wybierz czego dotyczy zgłoszenie</string>
+    <string name="myList">Moja lista</string>
+    <string name="friends">Znajomi</string>
+    <string name="reccomend">Polecane tytuły</string>
+    <string name="add">Zaproponuj dodanie premiery</string>
+
+    <string name="edit_nick_dialog_title">Okno z edycją twojego nicku</string>
+    <string name="cancel_button_label">Anuluj</string>
+    <string name="save_button_label">Zapisz</string>
+    <string name="edit_nick_avatar_title">Okno z edycja twojego avatara</string>
+
+
+</resources>

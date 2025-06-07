@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".message_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvMsgTyp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/Typ"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etMsgMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etMsgTittle" />
+
+        <EditText
+            android:id="@+id/etMsgTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvMsgUser"
+            app:layout_constraintTop_toBottomOf="@+id/rgMsg" />
+
+        <EditText
+            android:id="@+id/etMsgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tvMsgUser"
+            app:layout_constraintTop_toBottomOf="@+id/rgMsg" />
+
+        <Button
+            android:id="@+id/bMsgPrzeslij"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Prześlij"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/etMsgMessage"
+            app:layout_constraintStart_toStartOf="@+id/etMsgMessage"
+            app:layout_constraintTop_toBottomOf="@+id/etMsgMessage" />
+
+        <RadioGroup
+            android:id="@+id/rgMsg"
+            android:layout_width="289dp"
+            android:layout_height="168dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMsgTyp">
+
+            <RadioButton
+                android:id="@+id/rbMsgPremiera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Premiera"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbMsgUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Użytkownik"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/rbMsgApka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aplikacja"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvMsgTittle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Tytuł premiery:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/etMsgTittle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etMsgTittle" />
+
+        <TextView
+            android:id="@+id/tvMsgUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Nazwa użytkownika:"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/etMsgTittle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/etMsgTittle" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

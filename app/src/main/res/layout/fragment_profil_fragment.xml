@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profil_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/ibMylistProfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_favorite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/ivAvatarProfil"
+            app:layout_constraintTop_toBottomOf="@+id/ivAvatarProfil"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvEmailProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mail"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivAvatarProfil"
+            app:layout_constraintTop_toTopOf="@+id/ivAvatarProfil" />
+
+        <TextView
+            android:id="@+id/tvNickProfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/nick"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/tvEmailProfil"
+            app:layout_constraintStart_toStartOf="@+id/tvEmailProfil"
+            app:layout_constraintTop_toBottomOf="@+id/tvEmailProfil" />
+
+        <ImageView
+            android:id="@+id/ivAvatarProfil"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/ic_profil"
+            android:background="@color/games"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibFriendsProfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/ic_friends"
+            app:layout_constraintBottom_toBottomOf="@+id/ibMylistProfil"
+            app:layout_constraintStart_toEndOf="@+id/ibMylistProfil"
+            app:layout_constraintTop_toTopOf="@+id/ibMylistProfil"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/ibRecomendGamesProfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_recomend"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/ibMylistProfil"
+            app:layout_constraintStart_toStartOf="@+id/ibMylistProfil"
+            app:layout_constraintTop_toBottomOf="@+id/tvProfilmyList"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/ibAddGameProfil"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="@+id/ibRecomendGamesProfil"
+            app:layout_constraintEnd_toEndOf="@+id/ibFriendsProfil"
+            app:layout_constraintStart_toStartOf="@+id/ibFriendsProfil"
+            app:layout_constraintTop_toTopOf="@+id/ibRecomendGamesProfil"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/tvProfilAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/add"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/ibAddGameProfil"
+            app:layout_constraintStart_toStartOf="@+id/ibAddGameProfil"
+            app:layout_constraintTop_toBottomOf="@+id/ibAddGameProfil" />
+
+        <TextView
+            android:id="@+id/tvProfilReccomend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/reccomend"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/ibRecomendGamesProfil"
+            app:layout_constraintStart_toStartOf="@+id/ibRecomendGamesProfil"
+            app:layout_constraintTop_toBottomOf="@+id/ibRecomendGamesProfil" />
+
+        <TextView
+            android:id="@+id/tvProfilFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/friends"
+            android:textColor="#FFFFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/ibFriendsProfil"
+            app:layout_constraintStart_toStartOf="@+id/ibFriendsProfil"
+            app:layout_constraintTop_toBottomOf="@+id/ibFriendsProfil" />
+
+        <TextView
+            android:id="@+id/tvProfilmyList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/myList"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/ibMylistProfil"
+            app:layout_constraintStart_toStartOf="@+id/ibMylistProfil"
+            app:layout_constraintTop_toBottomOf="@+id/ibMylistProfil" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

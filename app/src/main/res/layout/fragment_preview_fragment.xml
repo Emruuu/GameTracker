@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".preview_fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTitlePrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="TextView"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivFrontPrev"
+            android:layout_width="180dp"
+            android:layout_height="240dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitlePrev" />
+
+        <TextView
+            android:id="@+id/tvProducerPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="TextView"
+            app:layout_constraintStart_toEndOf="@+id/ivFrontPrev"
+            app:layout_constraintTop_toTopOf="@+id/ivFrontPrev" />
+
+        <TextView
+            android:id="@+id/tvPublisherPrev"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvProducerPrev"
+            app:layout_constraintTop_toBottomOf="@+id/tvProducerPrev" />
+
+        <TextView
+            android:id="@+id/tvPlatformPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvPublisherPrev"
+            app:layout_constraintTop_toBottomOf="@+id/tvPublisherPrev" />
+
+        <TextView
+            android:id="@+id/tvDatePrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvPlatformPrev"
+            app:layout_constraintTop_toBottomOf="@+id/tvPlatformPrev" />
+
+        <TextView
+            android:id="@+id/tvModePrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvDatePrev"
+            app:layout_constraintTop_toBottomOf="@+id/tvDatePrev" />
+
+        <TextView
+            android:id="@+id/tvGenrePrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="TextView"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="@+id/tvModePrev"
+            app:layout_constraintTop_toBottomOf="@+id/tvModePrev" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFrontPrev">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDescPrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/white"
+                    android:text="TextView" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
